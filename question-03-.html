@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question 03</title>
+  </head>
+  <body>
+    <script>
+      function getGrade(s1, s2, s3) {
+        const average = (s1 + s2 + s3) / 3;
+
+        if (average >= 90) {
+          return "A";
+        } else if (average >= 80) {
+          return "B";
+        } else if (average >= 70) {
+          return "C";
+        } else if (average >= 60) {
+          return "D";
+        } else {
+          return "F";
+        }
+      }
+
+      console.log(getGrade(85, 90, 88));
+      console.log(getGrade(70, 75, 80));
+      console.log(getGrade(92, 94, 98));
+    </script>
+  </body>
+</html>
