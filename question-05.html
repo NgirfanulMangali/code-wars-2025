@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05</title>
+  </head>
+  <body>
+    <script>
+      function finalGrade(exam, projects) {
+        // Check for the highest grade first
+        if (exam > 90 || projects > 10) {
+          return 100;
+        }
+
+        // Check for the second grade
+        if (exam > 75 && projects >= 5) {
+          return 90;
+        }
+
+        // Check for the third grade
+        if (exam > 50 && projects >= 2) {
+          return 75;
+        }
+
+        // Return 0 if none of the conditions are met
+        return 0;
+      }
+
+      console.log(finalGrade(100, 12)); // Output: 100
+      console.log(finalGrade(99, 0)); // Output: 100
+      console.log(finalGrade(10, 15)); // Output: 100
+
+      console.log(finalGrade(85, 5)); // Output: 90
+
+      console.log(finalGrade(55, 3)); // Output: 75
+
+      console.log(finalGrade(55, 0)); // Output: 0
+      console.log(finalGrade(20, 2)); // Output: 0
+    </script>
+  </body>
+</html>
